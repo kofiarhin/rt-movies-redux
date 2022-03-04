@@ -1,0 +1,46 @@
+.details {
+  padding-bottom: 4rem;
+}
+
+.details .image-wrapper {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.poster,
+.backdrop {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.details h1 {
+  font-size: 3rem;
+}
+
+.details p {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 900px) {
+  .details .image-wrapper {
+    grid-template-columns: 1fr;
+    min-height: 60vh;
+  }
+
+  .poster {
+    display: none;
+  }
+
+  .details h1 {
+    font-size: 2rem;
+  }
+
+  .details p {
+    font-size: 1rem;
+  }
+}

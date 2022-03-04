@@ -1,0 +1,52 @@
+.main-wrapper {
+  padding-bottom: 4rem;
+}
+
+.movies-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  min-height: 100vh;
+}
+
+.movie-unit {
+  text-align: center;
+}
+
+.movie-unit h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.movie-unit p {
+  font-size: 1.2rem;
+}
+
+.main-wrapper button {
+  display: block;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.8rem 0rem;
+  background-color: rgb(175, 39, 39);
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.movies-wrapper img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .movies-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .movies-wrapper {
+    display: block;
+  }
+
+  .movies-wrapper h1 {
+    font-size: 1rem;
+  }
+}
