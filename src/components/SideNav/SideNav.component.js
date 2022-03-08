@@ -1,16 +1,25 @@
 import "./sideNav.styles.css";
-const SideNav = ({ showSideNav, onSetShowSideNav }) => {
+import { useDispatch, useSelector } from "react-redux";
+import {
+  onSetShowSideNav,
+  removeSideNav,
+} from "../../redux/actions/navigation.actions";
+import Search from "../Search/Search.component";
+
+const SideNav = () => {
+  const { showSideNav } = useSelector((state) => state.navigationReducer);
+
+  const dispatch = useDispatch();
+
   return (
     <div className="sideNav">
       {/* close */}
-      <div className="close" onClick={() => onSetShowSideNav(!showSideNav)}>
+      <div className="close" onClick={() => dispatch(removeSideNav())}>
         <i className="fa fa-close"></i>
       </div>
       <h1 className="title"> CineHouse</h1>
 
-      <div className="search">
-        <input type="text" placeholder="Search Movies" />
-      </div>
+      <Search />
 
       <nav>
         <a href="/">Home</a>

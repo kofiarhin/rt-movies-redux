@@ -6,6 +6,7 @@ import {
   GET_MOVIE_PENDING,
   GET_MOVIE_SUCCESS,
   GET_MOVIE_FAILED,
+  SET_SEARCH_FIELD,
 } from "../constants";
 
 // set page number
