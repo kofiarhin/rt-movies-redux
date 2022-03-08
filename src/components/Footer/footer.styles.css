@@ -1,0 +1,29 @@
+.footer-wrapper {
+  padding: 2rem 0rem;
+  width: 800px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.footer-wrapper .slug {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-wrapper i {
+  font-size: 2rem;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.icons-wrapper {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .footer-wrapper .slug {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}

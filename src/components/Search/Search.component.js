@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import {
   setSearchField,
   searchMovie,
@@ -8,6 +9,7 @@ import { removeSideNav } from "../../redux/actions/navigation.actions";
 
 const Search = () => {
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
 
   const dispatch = useDispatch();
 
@@ -18,6 +20,7 @@ const Search = () => {
 
     // remove sidenav
     dispatch(removeSideNav());
+    navigate("/");
   };
   return (
     <div className="search">

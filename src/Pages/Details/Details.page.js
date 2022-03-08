@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getMovie } from "../../redux/actions/movies.actions";
 import { useEffect } from "react";
-import Loading from "../Loading/Loading.component";
+import Loading from "../../components/Loading/Loading.component";
 
 // details
 const Details = () => {
