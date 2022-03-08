@@ -2,4 +2,4 @@
 
 A simple react application to display list of movies implementing redux
 
-# [Live Demo](https://6221d8233b375b9f99119af1--vigilant-hugle-206f1f.netlify.app)
+# [Live Demo](https://62276589d969c4e40c6283cd--vigilant-hugle-206f1f.netlify.app)
