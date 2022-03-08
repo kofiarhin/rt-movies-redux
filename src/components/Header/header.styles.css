@@ -5,11 +5,41 @@
   justify-content: space-between;
 }
 
-.main-header h1 {
-  font-size: 2rem;
+.main-header img {
+  width: 150px;
 }
+
 .main-header nav a {
   margin-left: 1rem;
   font-size: 1.2rem;
   text-decoration: none;
+}
+
+.main-header .search {
+  flex: 1;
+}
+
+.main-header .search input {
+  width: 100%;
+  outline: none;
+  border: 1px solid black;
+  padding: 0.8rem 0rem;
+  text-indent: 20px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+}
+.main-header .menu {
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 800px) {
+  .main-header nav,
+  .main-header .search {
+    display: none;
+  }
+
+  .main-header .menu {
+    display: block;
+  }
 }

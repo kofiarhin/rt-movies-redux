@@ -1,0 +1,39 @@
+.sideNav {
+  background-color: rgb(26, 26, 102);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.sideNav .title {
+  margin-bottom: 3rem;
+}
+
+.close {
+  font-size: 30px;
+  cursor: pointer;
+  color: red;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.sideNav .search input {
+  outline: none;
+  padding: 0.8rem 0rem;
+  text-indent: 20px;
+  width: 300px;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+}
+
+.sideNav nav a {
+  display: block;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
